@@ -1,0 +1,20 @@
+# Robots.txt para Corleone Barber Montevideo
+# Sitio: corleoneuy.com
+
+# Permitir acceso a todos los motores de búsqueda
+User-agent: *
+Allow: /
+
+# Bloquear carpetas sensibles (manteniendo assets/logo.webp visible)
+Disallow: /assets/
+Allow: /assets/logo.webp
+Allow: /assets/*.webp
+Allow: /assets/*.jpg
+Allow: /assets/*.png
+
+# Bloquear archivos temporales y de sistema
+Disallow: /tmp/
+Disallow: /*.json$
+
+# Ubicación del Sitemap
+Sitemap: https://corleoneuy.com/sitemap.xml

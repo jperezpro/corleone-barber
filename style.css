@@ -1,0 +1,99 @@
+body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('assets/hero.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .btn-gold {
+            background-color: #D4AF37;
+            color: #121212;
+            transition: all 0.3s ease;
+            font-weight: 700;
+        }
+        .btn-gold:hover {
+            background-color: #EACD69;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: #D4AF37;
+            margin: 1rem auto 0;
+        }
+        .service-item {
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s ease;
+        }
+        .service-item:hover {
+            background-color: rgba(212, 175, 55, 0.05);
+        }
+        .gallery-item {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .gallery-item.hidden {
+            transform: scale(0.9);
+            opacity: 0;
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .testimonial-card {
+            background-color: #1f1f1f;
+        }
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.btn-review {
+    background-color: #6a4b46;
+    color: #D4AF37;
+}
+
+.btn-review:hover {
+    background-color: #835e59;
+}
