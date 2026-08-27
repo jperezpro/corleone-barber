@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="flex justify-between items-center">
                 <h3 class="text-xl md:text-2xl font-bold text-white">${service.name}</h3>
                 <div class="flex items-center space-x-4">
-                    <span class="text-xl font-semibold text-[#D4AF37]">${service.price}</span>
+                    <span class="text-xl font-semibold text-white">${service.price}</span>
                     <span class="text-2xl text-gray-500 transform transition-transform duration-300">+</span>
                 </div>
             </div>
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         testimonialContainer.innerHTML = `
             <div class="testimonial-card p-8 rounded-lg border border-gray-700 shadow-lg text-center transition-opacity duration-500">
                 <p class="text-xl italic text-gray-200">"${t.quote}"</p>
-                <p class="mt-6 font-bold text-[#D4AF37]">- ${t.author}</p>
+                <p class="mt-6 font-bold text-[#3E6B45]">- ${t.author}</p>
             </div>
         `;
     }

@@ -7,21 +7,21 @@ body {
             font-family: 'Playfair Display', serif;
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('assets/hero.webp');
+            background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('assets/hero.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
         .btn-gold {
-            background-color: #D4AF37;
-            color: #121212;
+            background-color: #3E6B45;
+            color: #FFFFFF;
             transition: all 0.3s ease;
             font-weight: 700;
         }
         .btn-gold:hover {
-            background-color: #EACD69;
+            background-color: #5C8F63;
             transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 4px 10px rgba(62, 107, 69, 0.3);
         }
         .nav-link {
             position: relative;
@@ -35,7 +35,7 @@ body {
             bottom: -4px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #D4AF37;
+            background-color: #3E6B45;
             transition: width 0.3s ease;
         }
         .nav-link:hover::after, .nav-link.active::after {
@@ -46,7 +46,7 @@ body {
             display: block;
             width: 80px;
             height: 3px;
-            background-color: #D4AF37;
+            background-color: #3E6B45;
             margin: 1rem auto 0;
         }
         .service-item {
@@ -90,10 +90,10 @@ body {
 }
 
 .btn-review {
-    background-color: #6a4b46;
-    color: #D4AF37;
+    background-color: #C08A4E;
+    color: #FFFFFF;
 }
 
 .btn-review:hover {
-    background-color: #835e59;
+    background-color: #CE9E6C;
 }
