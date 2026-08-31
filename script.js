@@ -165,4 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('shadow-lg', 'shadow-black/50');
         }
     });
+
+    // Año dinámico del footer
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
 });
