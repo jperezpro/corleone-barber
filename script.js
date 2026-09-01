@@ -1,36 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     const servicesData = [
-        { 
+        {
+            name: 'Corte',
+            price: '$450',
+            popular: true,
+            description: '<ul class="list-disc list-inside"><li>Incluye CORTE completo con degradé.</li><li>Asesoramiento y técnicas de estilismo adaptadas a tu rostro.</li></ul>',
+            url: 'https://corleoneuy.setmore.com/services/e46d7acc-8a56-449a-874e-755524254234?step=time-slot&products=e46d7acc-8a56-449a-874e-755524254234&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
+            buttonText: 'Reservar servicio'
+        },
+        {
+            name: 'Corte + Barba',
+            price: '$550',
+            popular: true,
+            description: '<ul class="list-disc list-inside"><li>Incluye CORTE completo con degradé y asesoramiento.</li><li>Perfilado de BARBA y reducción de volumen para un aspecto elegante y cuidado.</li></ul>',
+            url: 'https://corleoneuy.setmore.com/services/a46111d3-df95-482c-b9ac-7b69fbed3f7f?step=time-slot&products=a46111d3-df95-482c-b9ac-7b69fbed3f7f&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
+            buttonText: 'Reservar servicio'
+        },
+        {
             name: 'Barba',
             price: '$250',
             description: '<ul class="list-disc list-inside"><li>Perfilado de Barba y reducción de volumen para un aspecto elegante y cuidado</li><li>Incluye Asesoramiento y diseño según tu estilo</li></ul>',
             url: 'https://corleoneuy.setmore.com/services/6304d19c-7c26-499b-8245-f2dc5ba41952?step=time-slot&products=6304d19c-7c26-499b-8245-f2dc5ba41952&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
             buttonText: 'Reservar servicio'
         },
-        { 
+        {
             name: 'Corte máquina, un solo número',
             price: '$300',
             description: '<ul class="list-disc list-inside"><li>Incluye asesoramiento y CORTE un solo nivel de altura.</li><li>Ideal para mantenimiento de pelo muy corto.</li></ul>',
             url: 'https://corleoneuy.setmore.com/services/fc48be48-d0ff-4dc7-bc6f-d6be5d8ae97c?step=time-slot&products=fc48be48-d0ff-4dc7-bc6f-d6be5d8ae97c&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
             buttonText: 'Reservar servicio'
         },
-        { 
-            name: 'Corte',
-            price: '$450',
-            description: '<ul class="list-disc list-inside"><li>Incluye CORTE completo con degradé.</li><li>Asesoramiento y técnicas de estilismo adaptadas a tu rostro.</li></ul>',
-            url: 'https://corleoneuy.setmore.com/services/e46d7acc-8a56-449a-874e-755524254234?step=time-slot&products=e46d7acc-8a56-449a-874e-755524254234&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
-            buttonText: 'Reservar servicio'
-        },
-        { 
-            name: 'Corte + Barba',
-            price: '$550',
-            description: '<ul class="list-disc list-inside"><li>Incluye CORTE completo con degradé y asesoramiento.</li><li>Perfilado de BARBA y reducción de volumen para un aspecto elegante y cuidado.</li></ul>',
-            url: 'https://corleoneuy.setmore.com/services/a46111d3-df95-482c-b9ac-7b69fbed3f7f?step=time-slot&products=a46111d3-df95-482c-b9ac-7b69fbed3f7f&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
-            buttonText: 'Reservar servicio'
-        },
-        { 
-            name: '⭐ Servicio VIP Corleone',
+        {
+            name: 'Servicio VIP Corleone',
             price: '$820',
             description: '<ul class="list-disc list-inside"><li>Corte + Barba + Lavado + BAÑO DE CREMA</li><li>Incluye CORTE completo con degradé y asesoramiento.</li><li>Perfilado de BARBA con reducción de volumen.</li><li>LAVADO de cortesía para una experiencia completa.</li><li>Tratamiento con BAÑO DE CREMA para un cuidado integral.</li></ul>',
             url: 'https://corleoneuy.setmore.com/services/656ade0a-ecf4-41e0-a1d8-3cfd3d520859?step=time-slot&products=656ade0a-ecf4-41e0-a1d8-3cfd3d520859&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
@@ -64,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         item.innerHTML = `
             <div class="flex justify-between items-center">
-                <h3 class="text-xl md:text-2xl font-bold text-white">${service.name}</h3>
+                <h3 class="text-xl md:text-2xl font-bold text-white">${service.name}${service.popular ? ' <span class="popular-badge">Popular</span>' : ''}</h3>
                 <div class="flex items-center space-x-4">
                     <span class="text-xl font-semibold text-white">${service.price}</span>
                     <span class="text-2xl text-gray-500 transform transition-transform duration-300">+</span>

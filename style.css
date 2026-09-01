@@ -97,3 +97,17 @@ body {
 .btn-review:hover {
     background-color: #CE9E6C;
 }
+
+.popular-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 10px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #3E6B45;
+    border-radius: 999px;
+    vertical-align: middle;
+}
