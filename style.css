@@ -12,6 +12,11 @@ body {
             background-position: center;
             background-attachment: fixed;
         }
+        @media (max-width: 768px), (hover: none) {
+            .hero-bg {
+                background-attachment: scroll;
+            }
+        }
         .btn-gold {
             background-color: #3E6B45;
             color: #FFFFFF;
