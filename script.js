@@ -31,13 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
             url: 'https://corleoneuy.setmore.com/services/fc48be48-d0ff-4dc7-bc6f-d6be5d8ae97c?step=time-slot&products=fc48be48-d0ff-4dc7-bc6f-d6be5d8ae97c&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
             buttonText: 'Reservar servicio'
         },
-        {
-            name: 'Servicio VIP Corleone',
-            price: '$820',
-            description: '<ul class="list-disc list-inside"><li>Corte + Barba + Lavado + BAÑO DE CREMA</li><li>Incluye CORTE completo con degradé y asesoramiento.</li><li>Perfilado de BARBA con reducción de volumen.</li><li>LAVADO de cortesía para una experiencia completa.</li><li>Tratamiento con BAÑO DE CREMA para un cuidado integral.</li></ul>',
-            url: 'https://corleoneuy.setmore.com/services/656ade0a-ecf4-41e0-a1d8-3cfd3d520859?step=time-slot&products=656ade0a-ecf4-41e0-a1d8-3cfd3d520859&type=service&staff=c2736db6-8484-4ce7-81bd-8b2917ccddd9&staffSelected=false',
-            buttonText: 'Reservar servicio'
-        },
         { 
             name: 'Colorimetría', 
             price: '', 
