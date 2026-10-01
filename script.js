@@ -167,3 +167,14 @@ document.addEventListener('DOMContentLoaded', function() {
         yearEl.textContent = new Date().getFullYear();
     }
 });
+// El mapa de Google pesa unos 600 KB de scripts: se carga recien cuando se
+// acerca a la pantalla, para no competir con el primer pantallazo.
+(function () {
+    const mapas = document.querySelectorAll('iframe[data-src]');
+    const cargar = (f) => { f.src = f.dataset.src; f.removeAttribute('data-src'); };
+    if (!('IntersectionObserver' in window)) { mapas.forEach(cargar); return; }
+    const io = new IntersectionObserver((entradas) => {
+        entradas.forEach((e) => { if (e.isIntersecting) { cargar(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '300px' });
+    mapas.forEach((f) => io.observe(f));
+})();
