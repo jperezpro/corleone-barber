@@ -6,7 +6,7 @@
     <link rel="canonical" href="https://corleoneuy.com">
     <meta name="description" content="Barbería en Montevideo - Corte de pelo y barba profesional en Av. Bolivia. Corleone Barber, el padrino de las barberías. ¡Reservá tu cita!">
     <title>Corleone Barber Montevideo - El Padrino de las Barberías</title>
-    <link rel="icon" href="assets/logo.webp" type="image/webp">
+    <link rel="icon" href="assets/logo-96.webp" type="image/webp">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Corleone Barber Montevideo - El Padrino de las Barberías">
     <meta property="og:description" content="Barbería en Montevideo - Corte de pelo y barba profesional en Av. Bolivia. Corleone Barber, el padrino de las barberías. ¡Reservá tu cita!">
@@ -26,12 +26,16 @@
       gtag('js', new Date());
     
       gtag('config', 'G-DNKLJCYS4N');
-      // gtag.js se baja después de la carga para no competir con el primer pantallazo.
+      // gtag.js (178 KB) se baja 2 s después de la carga: si no, se ejecuta
+      // antes del primer pintado en celulares lentos. Los eventos ya quedan en
+      // dataLayer y se envían cuando llega.
       window.addEventListener('load', function () {
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-DNKLJCYS4N';
-        document.head.appendChild(s);
+        setTimeout(function () {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-DNKLJCYS4N';
+          document.head.appendChild(s);
+        }, 2000);
       });
     </script>
     <!-- JSON-LD Schema para LocalBusiness -->
