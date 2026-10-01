@@ -7,10 +7,15 @@ body {
             font-family: 'Playfair Display', serif;
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('assets/hero.jpg');
+            background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('assets/hero.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+        }
+        @media (max-width: 800px) {
+            .hero-bg {
+                background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('assets/hero-800.webp');
+            }
         }
         @media (max-width: 768px), (hover: none) {
             .hero-bg {
